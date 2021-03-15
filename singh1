@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html>
-<body>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
 
-<h1>My first PHP page</h1>
-
-<?php
-echo "Hello World!";
+<?php 	
+	if ( is_home() ) { 	  
+	// This is the homepage activate the cycle plugin
+   	  $('#cycle').cycle(); 	
+	} else {    	 
+	// This is not a homepage do nothing...
+ 	} 
 ?>
-
-</body>
-</html>
+});
+</script>
